@@ -1,0 +1,115 @@
+@use 'base/variables' as v;
+
+.section__contact {
+  width: calc(100% + 1rem);
+  background-color: v.$color-blue-1;
+  color: v.$color-white;
+  padding: 8rem;
+
+  .rectangleBox {
+    top: 15%;
+    right: 5%;
+  }
+}
+
+.contact {
+  
+  &__grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2rem;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    margin-top: 7rem;
+  }
+
+  &__textBold {
+    font-weight: 700;
+  }
+
+  &__info {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.2;
+  
+    address {
+      font-style: normal;
+    }
+    
+    span {
+      font-weight: 400;
+    }
+
+  }
+  
+  &__icons {
+    justify-self: center;
+    align-self: center;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+
+      
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding: 2rem;
+      border: 1px solid v.$color-primary;
+      border-top-left-radius: 11px;
+      border-bottom-right-radius: 11px;
+    }
+    
+    a {
+      color: v.$color-primary;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__icon {
+    font-size: 6rem;
+  }
+
+}
+
+@media ( max-width: 48em )  {
+
+  .section__contact {
+    padding: 8rem 4rem;
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: 8rem;
+  }
+
+  .contact__description {
+    width: 80%;
+    margin-top: 5rem;
+  }
+
+  .contact__text,
+  .contact__textBold,
+  .contact__info {
+    font-size: 1.6rem;
+  }
+
+  .contact__text {
+    margin-top: 0;
+  }
+
+  .contact__icons {
+    padding: 0;
+  }
+}

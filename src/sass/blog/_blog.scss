@@ -1,0 +1,123 @@
+@use 'base/variables' as v;
+
+.blog {
+  padding: 5rem;
+  background-color: v.$color-white;
+ 
+  &--2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.6rem;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  &__headerInfo {
+    font-size: 1.2rem;
+    display: flex;
+    gap: 2rem;
+    
+    cite {
+      font-weight: 700;
+
+      &::after {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: v.$color-blue-2;
+        opacity: 0.6;
+      }
+
+    }
+  
+  }
+
+  &__imageBox {
+    margin-bottom: 5rem;
+    display: block;
+  }
+  
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    height: 40rem;
+  }
+  
+  &__info {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+
+    p {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__focus {
+    background-color: v.$color-blue-1;
+    color: v.$color-primary;
+    padding: 2rem;
+    font-weight: 600;
+  }
+  
+  &__nextPre {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    p {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+    
+    a {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: v.$color-blue-1;
+    }
+  }
+
+  &__next {
+    padding: 0 2rem;
+    border-left: 1px solid v.$color-blue-1;
+  }
+
+}
+
+@media ( max-width: 48em ) {
+  .blog__info {
+    width: 90%;
+  }
+}
+
+@media ( max-width: 27em ) {
+  .blog__info {
+    width: 100%;
+  }
+
+  .blog__nextPre {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .blog__next {
+    padding: 0;
+    border: none;
+  }
+}
+
+

@@ -1,0 +1,105 @@
+@use 'base/variables' as v;
+
+.section-hero {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 1rem;
+  position: relative;
+}
+
+.hero {
+  &__img {
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__info {
+    background-color: v.$color-blue-1;
+    color: v.$color-primary;
+    padding: 5rem 15rem 5rem 5rem;
+  }
+
+  &__text {
+    margin-bottom: 4rem;
+  }
+  
+  &__squareBox {
+    position: absolute;
+    animation: Rotate 2.5s ease-out infinite;
+    top: 10%;
+    right: 8%;
+    border: 3px solid v.$color-white;
+    width: 7rem;
+    height: 7rem;  
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media ( max-width: 56.25em ) {
+  .section-hero {
+    grid-template-columns: 35% 65%;
+  }
+
+  .hero__info {
+    padding-right: 10rem;
+  }
+
+  .hero__text {
+    margin-bottom: 6rem;
+  }
+
+  .hero__squareBox {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@media ( max-width: 48em ) {
+  .section-hero {
+    gap: 0;
+    width: calc( 100% + 1rem);
+  }
+
+  .hero__img {
+    padding: 1rem;
+    background-color: v.$color-blue-1;
+  }
+
+  .hero__img img {
+    height: 100%;
+  }
+
+  .hero__info {
+    padding: 2rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+  }
+
+}
+
+@media ( max-width: 31.25em ) {
+  .section-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+  }
+
+  .hero__squareBox {
+    display: none;
+  }
+
+  .hero__info {
+    padding-bottom: 5rem;
+  }
+}

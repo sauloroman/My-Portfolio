@@ -1,0 +1,61 @@
+@use 'variables' as v;
+
+.btn {
+
+  &:link,
+  &:visited {
+    color: v.$color-primary;
+    transition: all .4s ease-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    position: relative;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid currentColor;
+    transform: translate(-130%, -15%);
+    border-radius: 50%;
+    transition: all .2s ease-out;
+  }
+
+  &:hover::before {
+    width: 150%;
+    border-radius: 100px;
+    transform: translate(-18%, -15%);
+  }
+
+  &.btn--blue {
+    color: v.$color-blue-1;
+  }
+}
+
+@media ( max-width: 42.5em ) {
+  .btn:link,
+  .btn:visited {
+    font-size: 1.6rem;
+  }
+}
+
+@media ( max-width: 31.25em ) {
+
+  .btn:link,
+  .btn:visited {
+    margin-left: 8rem !important;
+  }
+
+  .btn::before {
+    width: 5rem;
+    height: 5rem;
+    transform: translate(-115%, -25%);
+  }
+
+  .btn:hover::before {
+    transform: translate(-18%, -20%);
+  }
+}

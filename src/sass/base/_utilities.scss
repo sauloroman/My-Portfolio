@@ -1,0 +1,47 @@
+.flex {
+  display: flex !important;
+}
+
+.justify-end {
+  justify-content: flex-end !important;
+}
+
+.margin-top-md {
+  margin-top: 8rem !important;
+}
+
+.margin-top-md {
+  margin-top: 8rem;
+}
+
+.margin-left-sm {
+  margin-left: 4rem !important; 
+}
+
+.margin-left-md {
+  margin-left: 5rem !important;
+}
+
+@media ( max-width: 42.5em ) {
+  main.margin-left-md {
+    margin: 0 !important;
+  }
+}
+
+.margin-left-bg {
+  margin-left: 12rem !important;
+}
+
+.relative {
+  position: relative !important;
+}
+
+.none {
+  display: none;
+}
+
+@media ( max-width: 42.5em ) {
+  .none {
+    display: block;
+  }
+}

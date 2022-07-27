@@ -1,0 +1,95 @@
+@use 'base/variables' as v;
+
+.aside {
+  position: fixed;
+  z-index: 999;
+  width: 3%;
+  padding: 10rem 0;
+  margin-right: 2rem;
+  margin-top: 5rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & ul {
+      display: flex;
+      transform: rotate(270deg);
+      gap: 5rem;
+    }
+
+  }
+
+  &__name {
+    width: 20rem;
+    display: inline-block;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20rem;
+    transform: rotate(270deg);
+    color: v.$color-blue-1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &__link,
+  &__link {
+
+    &:link,
+    &:visited {
+      color: v.$color-blue-1;
+      transition: all .4s ease-out;
+    }
+
+    &:hover,
+    &:active {
+      color: v.$color-blue-2;
+    }
+
+  }
+
+  &__containerSection {
+    background-color: v.$color-blue-3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &--2 {
+    background-color: v.$color-blue-4;
+  }
+
+  &--top {
+    padding: 4rem;
+    color: v.$color-primary;
+    background-color: v.$color-blue-1;
+  }
+  
+}
+
+.myNamePhone {
+  display: none;
+}
+
+@media ( max-width: 48em ) {
+  .aside {
+    display: none;
+  }
+
+  .myNamePhone {
+    display: block;
+    margin-left: -30rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+
+@media ( max-width: 31.25em ) {
+  .aside__containerSection {
+    height: 30rem;
+  }
+}

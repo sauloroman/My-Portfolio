@@ -1,0 +1,39 @@
+@use 'base/variables' as v;
+
+.features {
+  background-color: v.$color-blue-1;
+  padding: 4rem;
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+  }
+
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 10rem;
+  }
+
+  p {
+    color: v.$color-primary;
+    font-size: 1.6rem;
+  }
+}
+
+@media ( max-width: 31.25em ) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature {
+    margin-bottom: 5rem;
+  }
+}

@@ -1,0 +1,174 @@
+@use 'variables' as v;
+
+.container {
+  width: 100rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 1rem;
+
+  &--2 {
+    grid-template-columns: 30% 70%;
+  }
+}
+
+.separation-line {
+  margin: 2rem 0;
+  height: 7rem;
+  border-left: 1px solid v.$color-blue-1;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+
+  &--2 {
+    border-color: v.$color-primary;
+    margin-bottom: 0;
+  }
+
+}
+
+.description {
+  margin-bottom: 5rem;
+
+  & p {
+    margin-bottom: 2rem;
+  }
+  
+  & span {
+    font-weight: 700;
+  }
+
+}
+
+.icon {
+  &__plus {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: v.$color-blue-1;
+  }
+  
+  &__experience {
+    font-size: 2.4rem;
+    color: v.$color-blue-1;
+  }
+}
+
+
+.smallcircle {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid v.$color-primary;
+  border-radius: 50%;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate(-10px, -10px);
+    border: 1px solid v.$color-primary;
+    border-radius: 50%;
+  }
+
+}
+
+.copy {
+  text-align: center;
+}
+
+.info {
+  background-color: v.$color-white;
+  position: relative;
+}
+
+.text {
+  padding: 8rem;
+}
+
+.square__text {
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+.circleBox {
+  position: absolute;
+  top: 8%;
+  right: 8%;
+  width: 7rem;
+  height: 7rem;
+  border: 3px solid v.$color-blue-1;
+  border-radius: 50%;
+  animation: MoveInRight 2s infinite ease-out;
+  transition: all .4s ease-out;
+}
+
+.zigzagBox {
+  position: absolute;
+  bottom: 8%;
+  left: 8%;
+  animation: MoveInLeft 2s infinite ease-out;
+  transition: all .4s ease-out;
+
+  img {
+    height: 7rem;
+  }
+}
+
+.rectangleBox {
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+  width: 8rem;
+  height: 5rem;
+  border: 3px solid #fff;
+  animation: Left 2s infinite ease-out;
+}
+
+@media ( max-width: 56.25em ) {
+  .circleBox {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .zigzagBox img {
+    height: 6rem;
+  }
+}
+
+@media ( max-width: 42.5em ) {
+
+  .rectangleBox {
+    display: none;
+  }
+
+  .text {
+    padding: 8rem 4rem;
+  }
+
+  .section {
+    width: calc(100% + 1rem);
+    gap: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .aside__containerSection {
+    grid-row: 1 / 2;
+    height: 20rem;
+  }
+}
+
+@media ( max-width: 31.25em ) {
+  .section__presentation .circleBox {
+    right: -10%;
+    top: 13%;
+  }
+}

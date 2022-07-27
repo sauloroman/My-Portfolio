@@ -1,0 +1,158 @@
+@use 'base/variables' as v;
+
+.line {
+  background-color: v.$color-blue-1;
+  padding: 1.5px;
+  margin-bottom: 5px;
+  
+  &--1 {
+    width: 80%;
+    transition: all .4s ease-out;
+  }
+
+  &--2 {
+    width: 50%;
+    transition: all .4s ease-out;
+  }
+
+  &--3 {
+    width: 100%;
+    transition: all .4s ease-out;
+  }
+
+}
+
+.menu {
+  padding: 0 10rem;
+  background-color: v.$color-primary;
+  height: 7.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-out;
+  margin: 0 auto;
+  width: 120rem;
+
+  &__icons {
+    display: flex;
+    padding: 1rem;
+  }
+
+  &-logo {
+    margin: auto;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+
+    &:hover .line--1,
+    &:hover .line--2,
+    &:hover .line--3 {
+      width: 100%;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__link:link,
+  &__link:visited { 
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: v.$color-blue-1;
+    transition: all .4s ease-out;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: v.$color-blue-2;
+  }
+
+}
+
+.close.menu {
+  transform: translateY(-400%);
+}
+
+.close.menu-logo .line--1 {
+  width: 100%;
+  transform: rotate(45deg) translate(6px, 5px);
+}
+
+.close.menu-logo .line--2 {
+  width: 100%;
+  transform: rotate(-45deg);
+}
+
+.close.menu-logo .line--3 {
+  display: none;
+}
+
+@media ( max-width: 75em ) {
+
+  .menu__link:link,
+  .menu__link:visited {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media ( max-width: 48em ) {
+  .menu {
+    position: fixed;
+    padding: 0 8rem;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    left: 50%;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  }
+
+  .close.menu-logo .line--1 {
+    width: 105%;
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .menu-logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .line {
+    padding: 1.8px;
+  }
+
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu__link:link,
+  .menu__link:visited {
+    font-size: 1.8rem;
+  }
+
+  .close.menu {
+    transform: translateX(400%);
+  }
+}
+
+@media ( max-width: 27em ) {
+  .menu {
+    left: 30%;
+    width: 80%;
+    padding: 0 5rem;
+  }
+
+  .menu__list {
+    gap: 5rem;
+  }
+
+  .menu__link:link,
+  .menu__link:visited {
+    font-size: 2rem;
+  }
+  
+}

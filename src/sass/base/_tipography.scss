@@ -1,0 +1,87 @@
+@use 'variables' as v;
+
+h1, h2, h3 {
+  font-family: v.$typography-2;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+.hero__info h1 {
+  font-family: v.$typography-2;
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+.blog__header h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.studio h3 {
+  font-size: 1.4rem;
+}
+
+.project__info h3 {
+  line-height: 0;
+}
+
+.section__blog-widget h3 {
+  line-height: 1.3;
+}
+
+.aside__containerSection h3,
+.aside--top h3 {
+  color: v.$color-white;
+  text-transform: uppercase;
+}
+
+.blog-widget h4 {
+  margin-bottom: 1rem;
+}
+
+@media ( min-width: 56.25em ) {
+  h2 {
+    font-size: 3.4rem;
+  }
+  
+  h3 {
+    line-height: 1.4;
+  }
+
+  .hero__info h1 {
+    font-size: 5rem;
+    margin-bottom: 6rem;
+  }
+}
+
+@media ( max-width: 42.5em ) {
+  .hero__info h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+}
+
+@media ( max-width: 31.25em ) {
+  h3 {
+    font-size: 2rem;
+  }
+}

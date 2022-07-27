@@ -1,0 +1,51 @@
+@use 'base/variables' as v;
+
+.section__skills {
+  width: calc( 100% + 1rem);
+  margin-bottom: 1rem;
+}
+
+.skills {
+
+  &__container {
+    background-color: v.$color-white;
+    padding: 4rem 4rem 15rem 4rem;
+  }
+
+  &__squareBox{
+    top: 10%;
+    right: 10%;
+    border-color: v.$color-blue-1;
+  }
+  
+}
+
+.skill {
+  &__description {
+    width: 70%;
+    margin-bottom: 10rem;
+  }
+  
+  &__description span {
+    font-weight: 700;
+  }
+  
+  
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5rem;
+  }
+}
+
+.icon__skill {
+  justify-self: center;
+  color: v.$color-blue-1;
+  font-size: 6rem;
+}
+
+@media ( max-width: 31.25em ) {
+  .skill__description {
+    width: 100%;
+  }
+}
