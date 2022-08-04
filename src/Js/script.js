@@ -20,8 +20,10 @@ const showCloseMenu = function() {
 
 const openExperience = function( experience ) {
   const body = experience.querySelector('.experience__content');
+  const header = experience.querySelector('.experience__header');
 
   body.classList.toggle('open');
+  header.classList.toggle('open');
 }
 
 const cleanContainer = function() {
@@ -39,7 +41,7 @@ const createProject = function( id ) {
   const projectContainer = document.createElement('DIV');
   projectContainer.classList.add('project__info');
 
-  const {projectName, description, image1, image2, image3, gitHubUrl, liveUrl} = targetProject;
+  const {projectName, description, image1, image2, image3, image4, image5, image6, gitHubUrl, liveUrl} = targetProject;
 
 
   projectContainer.innerHTML = `
@@ -52,9 +54,12 @@ const createProject = function( id ) {
     </p>
 
     <div class="project-slides">
-      <img src=${image1} alt="Desktop project view">
-      <img src=${image2} alt="Code view">
-      <img src=${image3} alt="Cellphone project view">
+      <img src=${image1} alt="Desktop project view" />
+      <img src=${image2} alt="Desktop project view" />
+      <img src=${image3} alt="Desktop project view" />
+      <img src=${image4} alt="Desktop project view" />
+      <img src=${image5} alt="Desktop project view" />
+      <img src=${image6} alt="Desktop project view" />
     </div>
 
     <div class="project__buttons">
@@ -86,8 +91,6 @@ const showModal = function( e ) {
   
   createProject( selectedProject );
 }
-
-
 
 // #########################
 // EVENT LISTENERS

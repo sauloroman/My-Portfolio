@@ -1,6 +1,7 @@
 @use 'base/variables' as v;
 
 .header {
+  width: 131rem;
   position: fixed;
   z-index: 999;
   margin: 0 auto;
@@ -11,7 +12,6 @@
 @media ( max-width: 48em ) {
   .header {
     padding: 2rem 0;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
   }

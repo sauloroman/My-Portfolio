@@ -1,7 +1,7 @@
 @use 'variables' as v;
 
 .container {
-  width: 100rem;
+  width: 130rem;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -46,10 +46,26 @@
 }
 
 .icon {
-  &__plus {
+  &__plus,
+  &__close {
     font-size: 2.2rem;
     font-weight: 700;
     color: v.$color-blue-1;
+  }
+
+  &__close {
+    display: none;
+    opacity: 0;
+    transition: all .4s ease-out;
+  }
+
+  .open &__plus {
+    display: none;
+  }
+
+  .open &__close {
+    display: block;
+    opacity: 1;
   }
   
   &__experience {
