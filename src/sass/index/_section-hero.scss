@@ -5,12 +5,14 @@
   grid-template-columns: 30% 70%;
   gap: 1rem;
   position: relative;
+  background-color: v.$color-blue-1;
 }
 
 .hero {
   &__img {
 
     img {
+      width: 100%;
       height: 100%;
     }
   }
@@ -22,7 +24,7 @@
   }
 
   &__text {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
   }
   
   &__squareBox {
@@ -62,29 +64,6 @@
 
 @media ( max-width: 48em ) {
   .section-hero {
-    gap: 0;
-    width: calc( 100% + 1rem);
-  }
-
-  .hero__img {
-    padding: 1rem;
-    background-color: v.$color-blue-1;
-  }
-
-  .hero__img img {
-    height: 100%;
-  }
-
-  .hero__info {
-    padding: 2rem;
-    padding-right: 4rem;
-    padding-bottom: 2rem;
-  }
-
-}
-
-@media ( max-width: 31.25em ) {
-  .section-hero {
     grid-template-columns: 1fr;
   }
 
@@ -92,11 +71,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50rem;
+    height: 65rem;
+
+    img {
+      width: 50%;
+    }
+
+  }
+
+  .hero__info {
+    padding: 5rem;
   }
 
   .hero__squareBox {
     display: none;
+  }
+
+}
+
+@media ( max-width: 31.25em ) {
+  .hero__img {
+    img {
+      width: 70%;
+    }
   }
 
   .hero__info {

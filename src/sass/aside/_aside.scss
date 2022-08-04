@@ -57,6 +57,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 2rem;
   }
 
   &--2 {
@@ -89,7 +90,7 @@
 }
 
 @media ( max-width: 31.25em ) {
-  .aside__containerSection {
+  .aside__containerSection, .aside--top {
     height: 30rem;
   }
 }

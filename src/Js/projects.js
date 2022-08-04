@@ -2,10 +2,13 @@ const projects = [
   {
     id: "1",
     projectName: 'Rick and Morty - Personajes',
-    description: ' Proyecto hecho en React con el consumo de la API Rick and Morty</a>. Busqueda por palabras clave y paginación dinámica. Muestra los personajes que aparecen en determinada locación de la serie, su estado actual ( vivo / muerto ), su origen y la cantidad de apariciones que tienen.',
+    description: ' Proyecto hecho en React con el consumo de la API Rick and Morty</a>. Busqueda por palabras clave y paginación dinámica. Muestra los personajes que aparecen en determinada locación de la serie, su estado actual ( vivo / muerto ), su origen y la cantidad de apariciones que tienen. Se hizo uso de Axios para el consumo de la API.',
     image1: "/build/Img/Projects/RickAndMorty/1.png",
     image2: "/build/Img/Projects/RickAndMorty/code.png",
     image3: "/build/Img/Projects/RickAndMorty/2.jpg",
+    image4: "/build/Img/Projects/RickAndMorty/3.png",
+    image5: "/build/Img/Projects/RickAndMorty/4.jpeg",
+    image6: "/build/Img/Projects/RickAndMorty/5.png",
     gitHubUrl: "https://github.com/sauloroman/RickAndMortyApp",
     liveUrl: "https://rickandmortysrsn.netlify.com/"
   },
@@ -16,6 +19,9 @@ const projects = [
     image1: "/build/Img/Projects/Convertidor/1.png",
     image2: "/build/Img/Projects/Convertidor/code.png",
     image3: "/build/Img/Projects/Convertidor/2.jpg",
+    image4: "/build/Img/Projects/Convertidor/3.png",
+    image5: "/build/Img/Projects/Convertidor/4.jpeg",
+    image6: "/build/Img/Projects/Convertidor/5.png",
     gitHubUrl: "https://github.com/sauloroman/ConverterJS",
     liveUrl: "https://convertidorsistemassrsn.netlify.app/"
   },
@@ -26,6 +32,9 @@ const projects = [
     image1: "/build/Img/Projects/Creatives/1.png",
     image2: "/build/Img/Projects/Creatives/code.png",
     image3: "/build/Img/Projects/Creatives/2.jpg",
+    image4: "/build/Img/Projects/Creatives/3.png",
+    image5: "/build/Img/Projects/Creatives/4.jpeg",
+    image6: "/build/Img/Projects/Creatives/5.png",
     gitHubUrl: "https://github.com/sauloroman/SunnysiteSRSN",
     liveUrl: "https://sunnysitesrsn.netlify.app/"
   },
@@ -36,6 +45,9 @@ const projects = [
     image1: "/build/Img/Projects/Clima/1.png",
     image2: "/build/Img/Projects/Clima/code.png",
     image3: "/build/Img/Projects/Clima/2.jpg",
+    image4: "/build/Img/Projects/Clima/3.png",
+    image5: "/build/Img/Projects/Clima/4.jpeg",
+    image6: "/build/Img/Projects/Clima/5.png",
     gitHubUrl: "https://github.com/sauloroman/WeatherAppReact2",
     liveUrl: "https://appweathersrsn.netlify.app/"
   },
@@ -46,6 +58,9 @@ const projects = [
     image1: "/build/Img/Projects/Nucleus/1.png",
     image2: "/build/Img/Projects/Nucleus/code.png",
     image3: "/build/Img/Projects/Nucleus/2.jpg",
+    image4: "/build/Img/Projects/Nucleus/3.png",
+    image5: "/build/Img/Projects/Nucleus/4.jpeg",
+    image6: "/build/Img/Projects/Nucleus/5.png",
     gitHubUrl: "https://github.com/sauloroman/NucleusCSS",
     liveUrl: "https://nucleussrsn.netlify.app/"
   },
@@ -56,6 +71,9 @@ const projects = [
     image1: "/build/Img/Projects/Audifonos/1.png",
     image2: "/build/Img/Projects/Audifonos/code.png",
     image3: "/build/Img/Projects/Audifonos/2.jpg",
+    image4: "/build/Img/Projects/Audifonos/3.png",
+    image5: "/build/Img/Projects/Audifonos/4.jpeg",
+    image6: "/build/Img/Projects/Audifonos/5.png",
     gitHubUrl: "https://github.com/sauloroman/TechPROCSS",
     liveUrl: "https://techprosrsn.netlify.app/"
   },
@@ -66,6 +84,9 @@ const projects = [
     image1: "/build/Img/Projects/Audifonos/1.png",
     image2: "/build/Img/Projects/Audifonos/code.png",
     image3: "/build/Img/Projects/Audifonos/2.jpg",
+    image4: "/build/Img/Projects/Audifonos/3.png",
+    image5: "/build/Img/Projects/Audifonos/4.jpeg",
+    image6: "/build/Img/Projects/Audifonos/5.png",
     gitHubUrl: "https://github.com/sauloroman/NucleusCSS",
     liveUrl: "https://nucleussrsn.netlify.app/"
   },
@@ -76,6 +97,9 @@ const projects = [
     image1: "/build/Img/Projects/Planificador/1.png",
     image2: "/build/Img/Projects/Planificador/code.png",
     image3: "/build/Img/Projects/Planificador/2.jpg",
+    image4: "/build/Img/Projects/Planificador/3.png",
+    image5: "/build/Img/Projects/Planificador/4.jpeg",
+    image6: "/build/Img/Projects/Planificador/5.png",
     gitHubUrl: "https://github.com/sauloroman/AdministradorGastosReact",
     liveUrl: "https://administradorsrsn.netlify.app/"
   },
@@ -86,6 +110,9 @@ const projects = [
     image1: "/build/Img/Projects/Omnifood/1.png",
     image2: "/build/Img/Projects/Omnifood/code.png",
     image3: "/build/Img/Projects/Omnifood/2.jpg",
+    image4: "/build/Img/Projects/Omnifood/3.png",
+    image5: "/build/Img/Projects/Omnifood/4.jpeg",
+    image6: "/build/Img/Projects/Omnifood/5.png",
     gitHubUrl: "https://github.com/sauloroman/OmnifoodSRSN",
     liveUrl: "https://omnifood-srsn.netlify.app/"
   },
