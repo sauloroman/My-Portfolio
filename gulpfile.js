@@ -9,6 +9,8 @@ const { src, dest, series, watch } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
+const cssnano = require('cssnano');
 
 // IMAGE DEPENDENCIES
 const images = require('gulp-imagemin');
@@ -22,8 +24,10 @@ const avif = require('gulp-avif');
 const compile = function( done ) {
 
   src('./src/sass/main.scss')
+    .pipe( sourcemaps.init() )
     .pipe( sass({ outputStyle: 'expanded'}) )
-    .pipe( postcss([ autoprefixer() ]))
+    .pipe( postcss([ autoprefixer(), cssnano() ]))
+    .pipe( sourcemaps.write('.'))
     .pipe( dest('./build/css') )
 
   done();
