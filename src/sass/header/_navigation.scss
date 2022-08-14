@@ -27,11 +27,16 @@
   background-color: v.$color-primary;
   height: 7.7rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: all 1s ease-out;
   margin: 0 auto;
   width: 120rem;
+
+  &__social {
+    display: none;
+  }
 
   .hero__squareBox {
     display: none;
@@ -99,7 +104,7 @@
 
   .menu__link:link,
   .menu__link:visited {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .menu__list {
@@ -111,32 +116,26 @@
 @media ( max-width: 48em ) {
   .menu {
     position: fixed;
-    padding: 0 8rem;
-    width: 50%;
+    padding: 0 5rem;
+    width: 60%;
     height: 100vh;
     top: 0;
-    left: 50%;
+    left: 40%;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-
-    .hero__squareBox {
+    text-align: center;
+    
+    &__social {
+      margin-bottom: 10rem;
+      width: 80%;
       display: flex;
       justify-content: center;
-      align-items: center;
-      border-color: v.$color-blue-1;
-      width: 9rem;
-      height: 9rem;
-      right: 35%;
-      top: 11%;
+      gap: 5rem;
+      font-size: 3rem;
 
-      .square__text {
-        font-size: 4rem;
+      a {
+        color: v.$color-blue-1;
       }
     }
-
-    .square--2 {
-      top: 80%;
-    }
-    
   }
 
   .close.menu-logo .line--1 {

@@ -2,7 +2,7 @@
 
 .section-hero {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 45% 55%;
   gap: 1rem;
   position: relative;
   background-color: v.$color-blue-1;
@@ -44,9 +44,26 @@
 
 
 @media ( max-width: 56.25em ) {
+  // .section-hero {
+  //   grid-template-columns: 50% 50%;
+  // }
+
   .section-hero {
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 1fr;
   }
+
+  .hero__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75rem;
+
+    img {
+      width: 60%;
+    }
+
+  }
+
 
   .hero__info {
     padding-right: 10rem;
@@ -57,24 +74,15 @@
   }
 
   .hero__squareBox {
-    width: 6rem;
-    height: 6rem;
+    display: none;
   }
 }
 
 @media ( max-width: 48em ) {
-  .section-hero {
-    grid-template-columns: 1fr;
-  }
 
   .hero__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 65rem;
-
     img {
-      width: 50%;
+      width: 80%;
     }
 
   }
@@ -83,16 +91,13 @@
     padding: 5rem;
   }
 
-  .hero__squareBox {
-    display: none;
-  }
 
 }
 
 @media ( max-width: 31.25em ) {
   .hero__img {
     img {
-      width: 65%;
+      width: 100%;
     }
   }
 
