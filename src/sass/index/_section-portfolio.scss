@@ -16,7 +16,6 @@
   transition: all .4s ease-out;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: .5rem;
 
   img {
     object-fit: cover;

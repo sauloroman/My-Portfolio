@@ -16,3 +16,10 @@
   }
 
 }
+
+@media ( max-width: 31.25em ) { 
+  .footer__icon {
+    font-size: 4rem;
+    color: v.$color-blue-1;
+  }
+}
