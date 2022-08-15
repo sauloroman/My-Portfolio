@@ -10,7 +10,6 @@
 
 .hero {
   &__img {
-
     img {
       width: 100%;
       height: 100%;
@@ -97,7 +96,7 @@
 
 @media ( max-width: 31.25em ) {
   .hero__img {
-    height: 70rem;
+    height: 60rem;
     img {
       width: 90%;
     }
