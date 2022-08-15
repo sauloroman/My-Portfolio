@@ -56,7 +56,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75rem;
+    height: 65rem;
 
     img {
       width: 60%;
@@ -81,6 +81,7 @@
 @media ( max-width: 48em ) {
 
   .hero__img {
+    height: 65rem;
     img {
       width: 80%;
     }
@@ -96,8 +97,9 @@
 
 @media ( max-width: 31.25em ) {
   .hero__img {
+    height: 70rem;
     img {
-      width: 100%;
+      width: 90%;
     }
   }
 
