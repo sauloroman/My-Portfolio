@@ -12,7 +12,7 @@
 
 .gallery {
   background-color: v.$color-white;
-  padding: 0 3rem 6rem;
+  padding-bottom: 8rem;
   transition: all .4s ease-out;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -41,7 +41,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: linear-gradient(to right bottom, rgba(255, 244, 224, 0.2), rgba(255, 244, 224, 0.1));
+      background-image: linear-gradient(to right bottom, rgba(255, 244, 224, 0.4), rgba(255, 244, 224, 0.2));
     }
         
     &:nth-child(1) {
@@ -291,6 +291,11 @@
 }
 
 @media ( max-width: 31.25em ) {
+
+  .gallery {
+    padding: 2rem 2rem 6rem 2rem;
+    row-gap: 1rem;
+  }
 
   .project-slides {
     gap: 5rem;
