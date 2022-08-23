@@ -42,13 +42,13 @@ const imagemin = function() {
 }
 
 const imagesWebp = function() {
-  return src('./src/Img/**/*.{png,jpg}')
+  return src('./src/Img/**/*.{png,jpg,jpeg}')
     .pipe( webp({ quality: 50 }) )
     .pipe( dest('./build/img') );
 }
 
 const imagesAvif = function() {
-  return src('./src/Img/**/*.{png,jpg}')
+  return src('./src/Img/**/*.{png,jpg,jpeg}')
     .pipe( avif({ quality: 50 }) )
     .pipe( dest('./build/img') );
 }
@@ -62,4 +62,4 @@ exports.attention = attention;
 exports.imagemin = imagemin;
 exports.imagesWebp = imagesWebp;
 exports.imagesAvif = imagesAvif;
-exports.default = series( compile, attention );
+exports.default = series(  imagemin, imagesWebp, imagesAvif, compile, attention );
