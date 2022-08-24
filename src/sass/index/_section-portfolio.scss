@@ -332,12 +332,15 @@
     grid-column: 1 / 7;
   }
 
-  .gallery__imgBox:nth-child(6),
-  .gallery__imgBox:nth-child(14) {
+  .gallery__imgBox:nth-child(6) {
     img {
       background-position: top;
       height: 70rem;
     }
+  }
+
+  .section-projects .gallery .gallery__imgBox:nth-child(14){
+    grid-row: 17 / 19;
   }
 
   .project__info .project-slides img {
