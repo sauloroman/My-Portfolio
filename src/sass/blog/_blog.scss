@@ -3,12 +3,6 @@
 .blog {
   padding: 5rem;
   background-color: v.$color-white;
- 
-  &--2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-  }
 
   &__header {
     display: flex;
@@ -51,11 +45,11 @@
   &__image {
     width: 100%;
     object-fit: cover;
-    height: 40rem;
+    height: 50rem;
   }
   
   &__info {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 5rem;
 
@@ -69,6 +63,20 @@
     color: v.$color-primary;
     padding: 2rem;
     font-weight: 600;
+  }
+
+  &__feature {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 3rem;
+    margin: 5rem 0 8rem 0;
+
+    &-ImgBox {
+      justify-self: center;
+      img {
+        height: 45rem;
+      }
+    }
   }
   
   &__nextPre {
@@ -102,9 +110,24 @@
   .blog__info {
     width: 90%;
   }
+
+  .blog__feature {
+    grid-template-columns: 1fr;
+  }
+
+  .blog__nextPre {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .blog__next {
+    border: none;
+    padding: 0;
+  }
 }
 
 @media ( max-width: 27em ) {
+
   .blog__info {
     width: 100%;
   }
