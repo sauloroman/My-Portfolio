@@ -4,6 +4,7 @@ h1, h2, h3 {
   font-family: v.$typography-2;
   font-weight: 400;
   line-height: 1.2;
+  line-height: 1.5;
 }
 
 h1 {
@@ -77,6 +78,10 @@ h3 {
 
   h2 {
     margin-bottom: 3rem;
+  }
+
+  .studio h3 {
+    font-size: 2rem;
   }
 }
 

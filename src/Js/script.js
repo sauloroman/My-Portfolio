@@ -63,8 +63,8 @@ const createProject = function( id ) {
     </div>
 
     <div class="project__buttons">
-      <a class="btn btn--blue" href=${gitHubUrl} >Ver GitHub</a>
-      <a class="btn btn--blue" target="_blank" href=${liveUrl}>Ver Online 🔴</a>
+      <a class="btn btn--blue" href=${gitHubUrl} >Check GitHub</a>
+      <a class="btn btn--blue" target="_blank" href=${liveUrl}>Check Online 🔴</a>
     </div>
   `;
 
@@ -127,7 +127,6 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   let isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }

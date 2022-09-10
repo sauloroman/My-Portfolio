@@ -1,8 +1,8 @@
 const projects = [
   {
     id: "1",
-    projectName: 'Rick and Morty - Personajes',
-    description: ' Proyecto hecho en React con el consumo de la API Rick and Morty</a>. Busqueda por palabras clave y paginación dinámica. Muestra los personajes que aparecen en determinada locación de la serie, su estado actual ( vivo / muerto ), su origen y la cantidad de apariciones que tienen. Se hizo uso de Axios para el consumo de la API.',
+    projectName: 'Rick and Morty - Characters',
+    description: 'Project realized in ReactJS in which I consume API Rick and Morty. It has search by keywords and dynamic paging. It shows the characters that appear in a certain location of the series, their current state ( alive / dead ), their origin and the number of appearances they have. Axios was used for API consumption.',
     image1: "/build/Img/Projects/RickAndMorty/1.png",
     image2: "/build/Img/Projects/RickAndMorty/code.png",
     image3: "/build/Img/Projects/RickAndMorty/2.jpg",
@@ -14,8 +14,8 @@ const projects = [
   },
   {
     id: "2",
-    projectName: 'Convertidor de sistemas numéricos',
-    description: 'Proyecto elaborado con HTML, CSS Y JavaScript destinado a la conversión de números entre sistemás de numeración base 2, base 8, base 16 y base 10. Se hace uso de la programación orientada a objetos.',
+    projectName: 'Converter of numbering systems',
+    description: 'Project developed with HTML, CSS and JavaScript for the conversion of numbers between base 2, base 8, base 16 and base 10 numbering systems. Object oriented programming is used.',
     image1: "/build/Img/Projects/Convertidor/1.png",
     image2: "/build/Img/Projects/Convertidor/code.png",
     image3: "/build/Img/Projects/Convertidor/2.jpg",
@@ -28,7 +28,7 @@ const projects = [
   {
     id: "3",
     projectName: 'Landing Page - creatives',
-    description: 'Landing Page de un sitio denominado Sunnyside, este proyecto es el resultado de un reto en FrontEnd Mentor realizado exitosamente.',
+    description: 'Landing Page of a site called Sunnyside, this project is the result of a challenge in FrontEnd Mentor successfully. Made with the three fundamental web technologies, HTML5, CSS3 and JS. It features animations, responsive design and mobile menu.',
     image1: "/build/Img/Projects/Creatives/1.png",
     image2: "/build/Img/Projects/Creatives/code.png",
     image3: "/build/Img/Projects/Creatives/2.jpg",
@@ -40,8 +40,8 @@ const projects = [
   },
   {
     id: "4",
-    projectName: 'Clima App',
-    description: 'Clima App es un proyecto desarrollado con React y el consumo de la API OpenWeatherApp, puedes consultar algunas características climatológicas en tiempo real en muchas ciudades alrededor del mundo.',
+    projectName: 'Weather App',
+    description: 'Weather App is a project developed with React and consumption of the OpenWeatherApp API, you can check some real-time weather features in many cities around the world.',
     image1: "/build/Img/Projects/Clima/1.png",
     image2: "/build/Img/Projects/Clima/code.png",
     image3: "/build/Img/Projects/Clima/2.jpg",
@@ -54,7 +54,7 @@ const projects = [
   {
     id: "5",
     projectName: 'Landing Page - Nucleus',
-    description: 'Landing Page de una tarjeta de crédito denominada Nucleus donde se muestran diversas técnicas de aplicación de estilos CSS. Se aplicó la metología BEM.',
+    description: 'Landing page of a credit card called Nucleus where various techniques of applying CSS styles are displayed. The BEM methodology was applied.',
     image1: "/build/Img/Projects/Nucleus/1.png",
     image2: "/build/Img/Projects/Nucleus/code.png",
     image3: "/build/Img/Projects/Nucleus/2.jpg",
@@ -67,7 +67,7 @@ const projects = [
   {
     id: "6",
     projectName: 'Landing Page - TechPRO',
-    description: 'Proyecto elaborado con HTML y CSS sobre unos audifonos denominados TechPRO. Proyecto totalmente responsive y con la metodología de escribir código BEM',
+    description: 'Project elaborated with HTML and CSS on some audifonos denominated TechPRO. Project totally responsive and with the methodology of writing code BEM',
     image1: "/build/Img/Projects/Audifonos/1.png",
     image2: "/build/Img/Projects/Audifonos/code.png",
     image3: "/build/Img/Projects/Audifonos/2.jpg",
@@ -80,7 +80,7 @@ const projects = [
   {
     id: "7",
     projectName: 'Landing Page - Bookmark',
-    description: 'BookMark es un reto de FrontEnd Mentor que refleja el uso de HTML, CSS Y JS, emplea la responsabilidad y cuenta con numerosas animaciones.',
+    description: 'BookMark is a FrontEnd Mentor challenge that reflects the use of HTML, CSS and JS, employs responsibility and features numerous animations. The implementation of a slice with JavaScript is a feature to highlight.',
     image1: "/build/Img/Projects/BookMark/1.jpg",
     image2: "/build/Img/Projects/BookMark/code.png",
     image3: "/build/Img/Projects/BookMark/2.jpeg",
@@ -92,8 +92,8 @@ const projects = [
   },
   {
     id: "8",
-    projectName: 'Planificador de gastos',
-    description: 'Aplicación elaborada en React JS para administrar los gastos que una persona puede tener, con filtrado, calculo dinámico, creación, edición y eliminación de los gastos.',
+    projectName: 'Expense Planner',
+    description: 'Application developed in React JS to manage the expenses that a person can have, with filtering, dynamic calculation, creation, editing and elimination of expenses.',
     image1: "/build/Img/Projects/Planificador/1.png",
     image2: "/build/Img/Projects/Planificador/code.png",
     image3: "/build/Img/Projects/Planificador/2.jpg",
@@ -106,7 +106,7 @@ const projects = [
   {
     id: "9",
     projectName: 'Landing Page - Omnifood',
-    description: 'Landing Page de una startup dedicada al envío de paquetes de comida. Proyecto elaborado en HTML, CSS Y JS, 100% responsive.',
+    description: 'Landing Page of a startup dedicated to sending food packages. Project made in HTML, CSS and JS, 100% responsive.',
     image1: "/build/Img/Projects/Omnifood/1.png",
     image2: "/build/Img/Projects/Omnifood/code.png",
     image3: "/build/Img/Projects/Omnifood/2.jpg",
@@ -119,7 +119,7 @@ const projects = [
   {
     id: "10",
     projectName: 'ToDo List',
-    description: 'Aplicación destinada a la gestión y organización de tareas. JavaScript y Local Storage están presentes en este proyecto. Cuenta con sistema de alertas e interacción dinámica.',
+    description: 'Application for the management and organization of tasks. JavaScript and Local Storage are present in this project. It has an alert system and dynamic interaction.',
     image1: "/build/Img/Projects/ToDo/1.png",
     image2: "/build/Img/Projects/ToDo/code.png",
     image3: "/build/Img/Projects/ToDo/2.jpeg",
@@ -132,7 +132,7 @@ const projects = [
   {
     id: "11",
     projectName: 'CRUD React App',
-    description: 'En la presente aplicación se hace uso de los métodos HTTP para crear un CRUD de usuarios. Se emplea Axios y React Hook Form.',
+    description: 'In this application, HTTP methods are used to create a user CRUD. Axios, React Hook Form and Styled Components are used.',
     image1: "/build/Img/Projects/CRUD/1.png",
     image2: "/build/Img/Projects/CRUD/code.png",
     image3: "/build/Img/Projects/CRUD/2.jpeg",
@@ -145,7 +145,7 @@ const projects = [
   {
     id: "12",
     projectName: 'Shopping Cart',
-    description: 'Proyecto elaborado en HTML, CSS Y JavaScript, haciendo uso de módulos, array methods, local storage. Simulador de carrito de compras que hace cálculos y emula el pago en una plataforma.',
+    description: 'Project elaborated in HTML, CSS and JavaScript, making use of modules, array methods, local storage. Shopping cart simulator that makes calculations and emulates payment on a platform',
     image1: "/build/Img/Projects/Cart-project/1.png",
     image2: "/build/Img/Projects/Cart-project/code.png",
     image3: "/build/Img/Projects/Cart-project/2.jpeg",
@@ -157,8 +157,8 @@ const projects = [
   },
   {
     id: "13",
-    projectName: 'Criptomonedas App',
-    description: 'Consumo de una API para el despliegue del precio de las bitcoins más populares en diferentes divisas. Se hace uso de React Styled Components.',
+    projectName: 'Cryptocurrency App',
+    description: 'Consumption of an API to display the price of the most popular bitcoins in different currencies. React Styled Components is used, Fetch API, and different React Hooks',
     image1: "/build/Img/Projects/Criptomonedas/1.png",
     image2: "/build/Img/Projects/Criptomonedas/code.png",
     image3: "/build/Img/Projects/Criptomonedas/2.jpeg",
@@ -171,7 +171,7 @@ const projects = [
   {
     id: "14",
     projectName: 'Pokedex App',
-    description: 'Pokedex es una aplicación en React, React Router y Redux. Cuenta con paginación, filtrado, protección de rutas y busqueda individual. Así como permite la habilitación de dark mode y configuraciones personalizadas.',
+    description: 'Pokedex is an application in React, React Router and Redux. It has paging, filtering, route protection and individual search. As well as enabling dark mode and custom settings.',
     image1: "/build/Img/Projects/Pokedex/1.png",
     image2: "/build/Img/Projects/Pokedex/code.png",
     image3: "/build/Img/Projects/Pokedex/2.jpeg",
@@ -183,8 +183,8 @@ const projects = [
   },
   {
     id: "15",
-    projectName: 'Adivina mi número',
-    description: 'Esta aplicación pone en prácticas mis habilidades con las tres tecnlogías web, HTML, Css y JavaScript. Es un juego que detecta si has acertado el número que se generó aleatoriamente.',
+    projectName: 'Guess my number',
+    description: 'This application puts into practice my skills with the three web technologies, HTML, Css and JavaScript. It is a game that detects if you have guessed the number that was generated randomly.',
     image1: "/build/Img/Projects/Guess/1.png",
     image2: "/build/Img/Projects/Guess/code.png",
     image3: "/build/Img/Projects/Guess/2.jpeg",
@@ -196,8 +196,8 @@ const projects = [
   },
   {
     id: "16",
-    projectName: 'Busqueda de automóviles',
-    description: 'Empleo de los array methods en JavaScript para lograr la filtración de automoviles dependiendo las busquedas del usuario. Hace amplio uso de las funciones callback',
+    projectName: 'Car Search',
+    description: 'Use of array methods in JavaScript to achieve automotive filtering depending on user searches. Makes extensive use of callback functions',
     image1: "/build/Img/Projects/Busqueda/1.png",
     image2: "/build/Img/Projects/Busqueda/code.png",
     image3: "/build/Img/Projects/Busqueda/2.jpeg",
