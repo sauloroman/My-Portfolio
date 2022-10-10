@@ -62,4 +62,4 @@ exports.attention = attention;
 exports.imagemin = imagemin;
 exports.imagesWebp = imagesWebp;
 exports.imagesAvif = imagesAvif;
-exports.default = series( compile, attention );
+exports.default = series( imagemin, imagesWebp, imagesAvif, compile, attention );

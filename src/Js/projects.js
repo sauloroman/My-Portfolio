@@ -2,15 +2,15 @@ const projects = [
   {
     id: "1",
     projectName: 'Rick and Morty - Characters',
-    description: 'Project realized in ReactJS in which I consume API Rick and Morty. It has search by keywords and dynamic paging. It shows the characters that appear in a certain location of the series, their current state ( alive / dead ), their origin and the number of appearances they have. Axios was used for API consumption.',
+    description: 'This project is a single page application developed in ReactJs. It shows a list of different characters depending of the location that the user could search. It has dynamic pagination, a helper input that helps you to find a location and a system to control different errors that the API could return.',
     image1: "/build/Img/Projects/RickAndMorty/1.png",
     image2: "/build/Img/Projects/RickAndMorty/code.png",
-    image3: "/build/Img/Projects/RickAndMorty/2.jpg",
+    image3: "/build/Img/Projects/RickAndMorty/2.jpeg",
     image4: "/build/Img/Projects/RickAndMorty/3.png",
     image5: "/build/Img/Projects/RickAndMorty/4.jpeg",
     image6: "/build/Img/Projects/RickAndMorty/5.png",
-    gitHubUrl: "https://github.com/sauloroman/RickAndMortyApp",
-    liveUrl: "https://rickandmortysrsn.netlify.com/"
+    gitHubUrl: "https://github.com/sauloroman/RickandMortyAppReact",
+    liveUrl: "https://rickandmortyappsrsn.netlify.app/"
   },
   {
     id: "2",
@@ -132,15 +132,15 @@ const projects = [
   {
     id: "11",
     projectName: 'CRUD React App',
-    description: 'In this application, HTTP methods are used to create a user CRUD. Axios, React Hook Form and Styled Components are used.',
+    description: `As proof of the use of HTTP methods, I developed this responsive web application that allows you to perform the four operations of digital data management: create, read, update and delete. To achieve this, everything was based on an API that handles user administration. The application has modal windows and a user-friendly graphical interface. Form handling is delegated to a library known as "React Hook Form" that helps prevent errors.`,
     image1: "/build/Img/Projects/CRUD/1.png",
     image2: "/build/Img/Projects/CRUD/code.png",
     image3: "/build/Img/Projects/CRUD/2.jpeg",
     image4: "/build/Img/Projects/CRUD/3.png",
     image5: "/build/Img/Projects/CRUD/4.jpeg",
     image6: "/build/Img/Projects/CRUD/5.png",
-    gitHubUrl: "https://github.com/sauloroman/CRUD-REACT",
-    liveUrl: "https://crudsrsn.netlify.app/"
+    gitHubUrl: "https://github.com/sauloroman/USERSCRUDREACT",
+    liveUrl: "https://userscrudroman.netlify.app/"
   },
   {
     id: "12",
@@ -178,8 +178,8 @@ const projects = [
     image4: "/build/Img/Projects/Pokedex/3.png",
     image5: "/build/Img/Projects/Pokedex/4.jpeg",
     image6: "/build/Img/Projects/Pokedex/5.png",
-    gitHubUrl: "https://github.com/sauloroman/Pokedex-React",
-    liveUrl: "https://pokedexsrsn.netlify.app/"
+    gitHubUrl: "https://github.com/sauloroman/PokemonAppReact",
+    liveUrl: "https://pokemonsrsn.netlify.app/"
   },
   {
     id: "15",
