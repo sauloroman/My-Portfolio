@@ -118,6 +118,12 @@
       grid-row: 9 / 10;
       height: 40rem;
     }
+
+    &:nth-child(17) {
+      grid-column: 1 / 5;
+      grid-row: 10 / 11;
+      height: 40rem;
+    }
   }
 
   &__text {

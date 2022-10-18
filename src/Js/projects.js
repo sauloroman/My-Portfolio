@@ -207,4 +207,17 @@ const projects = [
     gitHubUrl: "https://github.com/sauloroman/Search-your-car",
     liveUrl: "https://busquedacampossrsn.netlify.app/"
   },
+  {
+    id: "17",
+    projectName: 'Ecommerce &mdash; React',
+    description: 'This is an app developed in ReactJS, Redux and React Router DOM which offer a variety of products gotten from a REST API. It has a shopping cart to emulate purchasing. You can register a new user and to use it to start buying things. It has protected routes and filter, categories and user information. It\'s important to mention that every single API request was made with Redux/thunk.',
+    image1: "/build/Img/Projects/Ecommerce/1.png",
+    image2: "/build/Img/Projects/Ecommerce/code.png",
+    image3: "/build/Img/Projects/Ecommerce/2.jpeg",
+    image4: "/build/Img/Projects/Ecommerce/3.png",
+    image5: "/build/Img/Projects/Ecommerce/4.jpeg",
+    image6: "/build/Img/Projects/Ecommerce/5.png",
+    gitHubUrl: "https://github.com/sauloroman/e-commerce-react",
+    liveUrl: "https://ecommercereactsrsn.netlify.app/"
+  },
 ]
