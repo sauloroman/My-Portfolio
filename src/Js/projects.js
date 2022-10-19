@@ -48,8 +48,8 @@ const projects = [
     image4: "/build/Img/Projects/Clima/3.png",
     image5: "/build/Img/Projects/Clima/4.jpeg",
     image6: "/build/Img/Projects/Clima/5.png",
-    gitHubUrl: "https://github.com/sauloroman/WeatherAppReact2",
-    liveUrl: "https://appweathersrsn.netlify.app/"
+    gitHubUrl: "https://github.com/sauloroman/WeatherApp-ReactJs",
+    liveUrl: "https://weatherappsrsn.netlify.app/"
   },
   {
     id: "5",
