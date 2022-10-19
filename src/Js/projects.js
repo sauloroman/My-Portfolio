@@ -41,10 +41,10 @@ const projects = [
   {
     id: "4",
     projectName: 'Weather App',
-    description: 'Weather App is a project developed with React and consumption of the OpenWeatherApp API, you can check some real-time weather features in many cities around the world.',
+    description: 'Weather App is a project developed with React and consumption of the OpenWeatherApp API, you can check some real-time weather features in many cities around the world. It uses geolocation object to ask to the user for knowing about his/her current position to get the weather of that part of the world.',
     image1: "/build/Img/Projects/Clima/1.png",
     image2: "/build/Img/Projects/Clima/code.png",
-    image3: "/build/Img/Projects/Clima/2.jpg",
+    image3: "/build/Img/Projects/Clima/2.jpeg",
     image4: "/build/Img/Projects/Clima/3.png",
     image5: "/build/Img/Projects/Clima/4.jpeg",
     image6: "/build/Img/Projects/Clima/5.png",
