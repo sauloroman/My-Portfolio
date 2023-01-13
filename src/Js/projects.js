@@ -131,16 +131,16 @@ const projects = [
   },
   {
     id: "11",
-    projectName: 'CRUD React App',
-    description: `As proof of the use of HTTP methods, I developed this responsive web application that allows you to perform the four operations of digital data management: create, read, update and delete. To achieve this, everything was based on an API that handles user administration. The application has modal windows and a user-friendly graphical interface. Form handling is delegated to a library known as "React Hook Form" that helps prevent errors.`,
-    image1: "/build/Img/Projects/CRUD/1.png",
-    image2: "/build/Img/Projects/CRUD/code.png",
-    image3: "/build/Img/Projects/CRUD/2.jpeg",
-    image4: "/build/Img/Projects/CRUD/3.png",
-    image5: "/build/Img/Projects/CRUD/4.jpeg",
-    image6: "/build/Img/Projects/CRUD/5.png",
-    gitHubUrl: "https://github.com/sauloroman/USERSCRUDREACT",
-    liveUrl: "https://userscrudroman.netlify.app/"
+    projectName: 'Landing Page &mdash; PodcastFM',
+    description: `The current project is called "Podcast FM". This project is a landing page to promote a platform where you can distribute your podcasts. It has seven sections and it's completely responsive since it follows the mobile first principle. Different CSS methodologies were followed and semantic content is strongly stablished.`,
+    image1: "/build/Img/Projects/Podcast/1.png",
+    image2: "/build/Img/Projects/Podcast/code.png",
+    image3: "/build/Img/Projects/Podcast/2.jpeg",
+    image4: "/build/Img/Projects/Podcast/3.png",
+    image5: "/build/Img/Projects/Podcast/4.jpeg",
+    image6: "/build/Img/Projects/Podcast/5.png",
+    gitHubUrl: "https://github.com/sauloroman/PodcastFM-LandingPage",
+    liveUrl: "https://podcastfmsrsn.netlify.app/"
   },
   {
     id: "12",
