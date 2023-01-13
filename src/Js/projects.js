@@ -220,4 +220,17 @@ const projects = [
     gitHubUrl: "https://github.com/sauloroman/e-commerce-react",
     liveUrl: "https://ecommercereactsrsn.netlify.app/"
   },
+  {
+    id: "18",
+    projectName: 'CountriesApp &mdash; React',
+    description: 'This application shows information of countries around the world. You can filter by their continent and even, you can look for a specific country by writing its name. It has multiple pages to navigate and it was developed following the "Mobile First" principle. \nIn addition, it has pagination to appreciate better each country when we scroll in the application and it has integrated a dark mode to change the ui which it is save at local storage to change it only when the user wants to do it. It\'s important to mention that this could be used to learn, since you find information about their capital, population, location, languages, etc.',
+    image1: "/build/Img/Projects/Countries/1.png",
+    image2: "/build/Img/Projects/Countries/code.png",
+    image3: "/build/Img/Projects/Countries/2.jpeg",
+    image4: "/build/Img/Projects/Countries/3.png",
+    image5: "/build/Img/Projects/Countries/4.jpeg",
+    image6: "/build/Img/Projects/Countries/5.png",
+    gitHubUrl: "https://github.com/sauloroman/Countries-React",
+    liveUrl: "https://countriessrsn.netlify.app/"
+  },
 ]
